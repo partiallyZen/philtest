@@ -23,6 +23,7 @@ philosophers_tuple = [
                 
 username = input("What is your name?")  #establish user
 print("Hello, " + username + ". How much do you know about philosophy?")
+users.append(username)
 userprep = str(input("None, Average, Above Average, PhD?"))
 print(userprep)
 userpref=input("Would you conside yourself religious? Y/N:")
@@ -46,7 +47,7 @@ if "N" in userpref:
         
 if "Y" in userpref:
     print("You considered yourself religious.") 
- nn    print(religlists)
+    print(religlists)
     userrelig = input()
     if userrelig in religlists:
         print("You Picked: " + userrelig)
